@@ -1,0 +1,31 @@
+﻿body {
+
+}
+#header{
+    top:0px;
+}
+.checkout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: #E9E9E9;
+    border-radius: 50%;
+    position: relative;
+}
+    .checkout span {
+        background-color: red;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        display:flex;
+        font-size:12px;
+        justify-content:center;
+        align-items:center;
+        top: -3px;
+        right: -7px;
+        color:white;
+    }
+

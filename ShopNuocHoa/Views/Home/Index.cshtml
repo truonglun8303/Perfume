@@ -1,0 +1,225 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@Html.Action("Partial_Banner","Home")
+<section id="company-services" class="padding-large">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 pb-3">
+                <div class="icon-box d-flex">
+                    <div class="icon-box-icon pe-3 pb-3">
+                        <svg class="cart-outline">
+                            <use xlink:href="#cart-outline" />
+                        </svg>
+                    </div>
+                    <div class="icon-box-content">
+                        <h3 class="card-title text-uppercase text-dark">Free delivery</h3>
+                        <p>Enjoy free shipping on all orders.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pb-3">
+                <div class="icon-box d-flex">
+                    <div class="icon-box-icon pe-3 pb-3">
+                        <svg class="quality">
+                            <use xlink:href="#quality" />
+                        </svg>
+                    </div>
+                    <div class="icon-box-content">
+                        <h3 class="card-title text-uppercase text-dark">Quality guarantee</h3>
+                        <p>We ensure top quality for every product.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pb-3">
+                <div class="icon-box d-flex">
+                    <div class="icon-box-icon pe-3 pb-3">
+                        <svg class="price-tag">
+                            <use xlink:href="#price-tag" />
+                        </svg>
+                    </div>
+                    <div class="icon-box-content">
+                        <h3 class="card-title text-uppercase text-dark">Daily offers</h3>
+                        <p>Discover special deals every day.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 pb-3">
+                <div class="icon-box d-flex">
+                    <div class="icon-box-icon pe-3 pb-3">
+                        <svg class="shield-plus">
+                            <use xlink:href="#shield-plus" />
+                        </svg>
+                    </div>
+                    <div class="icon-box-content">
+                        <h3 class="card-title text-uppercase text-dark">100% secure payment</h3>
+                        <p>Secure payment with advanced encryption.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@Html.Action("Partial_ProductSales", "Product")
+
+@Html.Action("Partial_BestSeller", "Product")
+<section id="yearly-sale" class="bg-light-blue overflow-hidden mt-5 padding-xlarge" style="background-image: url('images/single-image1.png');background-position: right; background-repeat: no-repeat;">
+    <div class="row d-flex flex-wrap align-items-center">
+        <div class="col-md-6 col-sm-12">
+            <div class="text-content offset-4 padding-medium">
+                <h3>10% off</h3>
+                <h2 class="display-2 pb-5 text-uppercase text-dark">New year sale</h2>
+                <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Sale</a>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+
+        </div>
+    </div>
+</section>
+@Html.Action("Partial_News_IsHome","News")
+<section id="testimonials" class="position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="review-content position-relative">
+                <div class="swiper-icon swiper-arrow swiper-arrow-prev position-absolute d-flex align-items-center">
+                    <svg class="chevron-left">
+                        <use xlink:href="#chevron-left" />
+                    </svg>
+                </div>
+                <div class="swiper testimonial-swiper">
+                    <div class="quotation text-center">
+                        <svg class="quote">
+                            <use xlink:href="#quote" />
+                        </svg>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center d-flex justify-content-center">
+                            <div class="review-item col-md-10">
+                                <i class="icon icon-review"></i>
+                                <blockquote>“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”</blockquote>
+                                <div class="rating">
+                                    <svg class="star star-fill">
+                                        <use xlink:href="#star-fill"></use>
+                                    </svg>
+                                    <svg class="star star-fill">
+                                        <use xlink:href="#star-fill"></use>
+                                    </svg>
+                                    <svg class="star star-fill">
+                                        <use xlink:href="#star-fill"></use>
+                                    </svg>
+                                    <svg class="star star-half">
+                                        <use xlink:href="#star-half"></use>
+                                    </svg>
+                                    <svg class="star star-empty">
+                                        <use xlink:href="#star-empty"></use>
+                                    </svg>
+                                </div>
+                                <div class="author-detail">
+                                    <div class="name text-dark text-uppercase pt-2">Emma Chamberlin</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center d-flex justify-content-center">
+                            <div class="review-item col-md-10">
+                                <i class="icon icon-review"></i>
+                                <blockquote>“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</blockquote>
+                                <div class="rating">
+                                    <svg class="star star-fill">
+                                        <use xlink:href="#star-fill"></use>
+                                    </svg>
+                                    <svg class="star star-fill">
+                                        <use xlink:href="#star-fill"></use>
+                                    </svg>
+                                    <svg class="star star-fill">
+                                        <use xlink:href="#star-fill"></use>
+                                    </svg>
+                                    <svg class="star star-half">
+                                        <use xlink:href="#star-half"></use>
+                                    </svg>
+                                    <svg class="star star-empty">
+                                        <use xlink:href="#star-empty"></use>
+                                    </svg>
+                                </div>
+                                <div class="author-detail">
+                                    <div class="name text-dark text-uppercase pt-2">Jennie Rose</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-icon swiper-arrow swiper-arrow-next position-absolute d-flex align-items-center">
+                    <svg class="chevron-right">
+                        <use xlink:href="#chevron-right" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
+@Html.Action("Partial_Subcrice", "Home")
+@*<section id="instagram" class="padding-large overflow-hidden no-padding-top">
+    <div class="container">
+        <div class="row">
+            <div class="display-header text-uppercase text-dark text-center pb-3">
+                <h2 class="display-7">Shop Our Insta</h2>
+            </div>
+            <div class="d-flex flex-wrap">
+                <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                        <img src="~/Content/Frontend_Home/images/insta-item1.jpg" alt="instagram" class="insta-image">
+                        <div class="icon-overlay position-absolute d-flex justify-content-center">
+                            <svg class="instagram">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                        <img src="~/Content/Frontend_Home/images/insta-item2.jpg" alt="instagram" class="insta-image">
+                        <div class="icon-overlay position-absolute d-flex justify-content-center">
+                            <svg class="instagram">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                        <img src="~/Content/Frontend_Home/images/insta-item3.jpg" alt="instagram" class="insta-image">
+                        <div class="icon-overlay position-absolute d-flex justify-content-center">
+                            <svg class="instagram">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                        <img src="~/Content/Frontend_Home/images/insta-item4.jpg" alt="instagram" class="insta-image">
+                        <div class="icon-overlay position-absolute d-flex justify-content-center">
+                            <svg class="instagram">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </figure>
+                <figure class="instagram-item pe-2">
+                    <a href="https://templatesjungle.com/" class="image-link position-relative">
+                        <img src="~/Content/Frontend_Home/images/insta-item5.jpg" alt="instagram" class="insta-image">
+                        <div class="icon-overlay position-absolute d-flex justify-content-center">
+                            <svg class="instagram">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>*@
+
