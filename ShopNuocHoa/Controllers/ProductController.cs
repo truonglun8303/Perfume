@@ -56,7 +56,7 @@ namespace ShopNuocHoa.Controllers
 
         public ActionResult Partial_ProductSales()
         {
-            var items = db.Products.Where(x => x.IsSale && x.IsActive).Take(5).ToList();
+            var items = db.Products.Where(x => x.IsSale && x.IsActive).Take(8).ToList();
             return PartialView(items);
         }
         public ActionResult Partial_ProductBanner(int ? id)

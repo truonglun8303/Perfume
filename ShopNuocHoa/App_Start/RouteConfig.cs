@@ -44,8 +44,8 @@ namespace ShopNuocHoa
           );
             routes.MapRoute(
             name: "BaiViet",
-            url: "post/{alias}",
-            defaults: new { controller = "Article", action = "Index", alias = UrlParameter.Optional },
+            url: "AboutUs",
+            defaults: new { controller = "AboutUs", action = "Index", alias = UrlParameter.Optional },
             namespaces: new[] { "ShopNuocHoa.Controllers" }
         );
             routes.MapRoute(

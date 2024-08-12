@@ -8,7 +8,8 @@ using System.Web.Mvc;
 
 namespace ShopNuocHoa.Areas.Admin.Controllers
 {
-    
+    [Authorize(Roles = "Admin,Employee")]
+
     public class BannerController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

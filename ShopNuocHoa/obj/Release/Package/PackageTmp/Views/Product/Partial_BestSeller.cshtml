@@ -1,0 +1,92 @@
+﻿@model IEnumerable<ShopNuocHoa.Models.EF.Product>
+
+<style>
+    .swiper-slide {
+        border: 0.1px solid #e6e7e6;
+        font-family: "Comfortaa", sans-serif;
+    }
+
+    .product-item-content {
+        border-bottom: 0.1px solid #e6e7e6;
+    }
+
+    .product-item-details {
+        border-top: 0.1px solid #e6e7e6;
+        p
+    {
+        color: black;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    }
+
+    .product-item-actions span {
+        float: right;
+    }
+
+    .product-store .product-card:hover .cart-concern {
+        bottom: 106px;
+        opacity: 1;
+    }
+</style>
+<section id="smart-watches" class="product-store padding-large position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="display-header d-flex justify-content-between pb-3">
+                <h2 class="display-7 text-dark text-uppercase">Best Seller</h2>
+                <div class="btn-right">
+                    <a href="/Product" class="btn btn-medium btn-normal text-uppercase">Go to Shop</a>
+                </div>
+            </div>
+            @if (Model != null && Model.Any())
+            {
+
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper">
+                        @foreach (var item in Model)
+                        {
+                            var strImage = "";
+                            var img = item.ProductImage.FirstOrDefault(x => x.IsDefault);
+                            if (img != null)
+                            {
+                                strImage = img.Image;
+                            }
+
+                            <div class="swiper-slide" @item.ProductCategory.Alias>
+                                <div class="product-card position-relative">
+                                    <a class="image-holder" href="/chi-tiet/@item.Alias-p@(item.Id)">
+                                        <img src="@strImage" alt="@item.Title" class="img-fluid pb-2">
+                                    </a>
+                                    <div class="cart-concern position-absolute">
+                                        <div class="cart-button d-flex">
+                                            <a href="#" class="btn btn-medium btn-black btnAddToCart" data-id="@item.Id">Add to Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                                        </div>
+                                    </div>
+                                    @*<div class="card-detail d-flex justify-content-between align-items-baseline pt-3">
+                                    <h3 class="card-title text-uppercase">
+                                        <a href="#">@item.Title</a>
+                                    </h3>
+                                    <span class="item-price text-primary">@ShopNuocHoa.Common.Common.FormatNumber(item.PriceSale)</span>
+                                </div>*@
+                                    <div class="product-item-content">
+                                        <a class="p-2 fw-bold h4" href="/chi-tiet/@item.Alias-p@(item.Id)">@item.Title</a>
+                                        <div class="product-item-details">
+                                            <p class="ps-2">@item.Description</p>
+                                            <p class="ps-2">@item.Alias</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-item-actions">
+                                        <a class="ps-2" href="">Price:</a>
+                                        <span class="product-item-price pe-2">@ShopNuocHoa.Common.Common.FormatNumber(item.Price)$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="swiper-pagination position-absolute text-center"></div>
+</section>
