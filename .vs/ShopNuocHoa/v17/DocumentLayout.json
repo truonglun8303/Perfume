@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|c:\\users\\pc\\source\\repos\\shopnuochoa\\shopnuochoa\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|c:\\users\\pc\\source\\repos\\shopnuochoa\\shopnuochoa\\views\\shoppingcart\\partial_item_thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\views\\shoppingcart\\partial_item_thanhtoan.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\shopnuochoa\\views\\news\\partial_news_ishome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\views\\news\\partial_news_ishome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|c:\\users\\pc\\source\\repos\\shopnuochoa\\shopnuochoa\\views\\shoppingcart\\partial_item_cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\views\\shoppingcart\\partial_item_cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\shopnuochoa\\views\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\views\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\shopnuochoa\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\views\\shoppingcart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\shopnuochoa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\shopnuochoa\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D013168-B7C0-4192-9721-8EBC3EE73639}|ShopNuocHoa\\ShopNuocHoa.csproj|solutionrelative:shopnuochoa\\controllers\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,39 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "ShopNuocHoa\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "ShopNuocHoa\\Areas\\Admin\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
+              "Title": "Partial_Item_ThanhToan.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "RelativeDocumentMoniker": "ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "RelativeToolTip": "ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_ThanhToan.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-11T15:04:36.815Z",
+              "WhenOpened": "2024-12-22T13:44:06.003Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Partial_News_IsHome.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\News\\Partial_News_IsHome.cshtml",
-              "RelativeDocumentMoniker": "ShopNuocHoa\\Views\\News\\Partial_News_IsHome.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\News\\Partial_News_IsHome.cshtml",
-              "RelativeToolTip": "ShopNuocHoa\\Views\\News\\Partial_News_IsHome.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Title": "Partial_Item_Cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "RelativeDocumentMoniker": "ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "RelativeToolTip": "ShopNuocHoa\\Views\\ShoppingCart\\Partial_Item_Cart.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAADAAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T14:41:43.33Z"
+              "WhenOpened": "2024-12-22T13:40:46.898Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\News\\Index.cshtml",
-              "RelativeDocumentMoniker": "ShopNuocHoa\\Views\\News\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\News\\Index.cshtml",
-              "RelativeToolTip": "ShopNuocHoa\\Views\\News\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShopNuocHoa\\Views\\ShoppingCart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\ShoppingCart\\Index.cshtml",
+              "RelativeToolTip": "ShopNuocHoa\\Views\\ShoppingCart\\Index.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T14:41:41.423Z"
+              "WhenOpened": "2024-12-22T09:28:01.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Controllers\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "ShopNuocHoa\\Controllers\\ShoppingCartController.cs",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Controllers\\ShoppingCartController.cs",
+              "RelativeToolTip": "ShopNuocHoa\\Controllers\\ShoppingCartController.cs",
+              "ViewState": "AQIAAJABAAAAAAAAAAAAAKIBAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T03:42:14.26Z"
             },
             {
               "$type": "Document",
@@ -73,9 +91,10 @@
               "RelativeDocumentMoniker": "ShopNuocHoa\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\PC\\source\\repos\\ShopNuocHoa\\ShopNuocHoa\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "ShopNuocHoa\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAJMAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAEBVwAkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-10T14:22:59.61Z"
+              "WhenOpened": "2024-12-21T01:15:17.137Z",
+              "EditorCaption": ""
             }
           ]
         }

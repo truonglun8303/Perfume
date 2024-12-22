@@ -3,7 +3,6 @@ using Microsoft.AspNet.Identity.Owin;
 using ShopNuocHoa.Models.EF;
 using ShopNuocHoa.Models.Payments;
 using ShopNuocHoa.Models;
-using ShopNuocHoa;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -88,6 +87,7 @@ namespace ShopNuocHoa.Controllers
                         vnpay.AddResponseData(s, vnpayData[s]);
                     }
                 }
+
                 string orderCode = Convert.ToString(vnpay.GetResponseData("vnp_TxnRef"));
                 long vnpayTranId = Convert.ToInt64(vnpay.GetResponseData("vnp_TransactionNo"));
                 string vnp_ResponseCode = vnpay.GetResponseData("vnp_ResponseCode");
@@ -259,10 +259,10 @@ namespace ShopNuocHoa.Controllers
                     contentAdmin = contentAdmin.Replace("{{DiaChiNhanHang}}", order.Address);
                     contentAdmin = contentAdmin.Replace("{{ThanhTien}}", ShopNuocHoa.Common.Common.FormatNumber(thanhtien, 0));
                     contentAdmin = contentAdmin.Replace("{{TongTien}}", ShopNuocHoa.Common.Common.FormatNumber(TongTien, 0));
-                    ShopNuocHoa.Common.Common.SendMail("MiniStore", "Đơn hàng mới #" + order.Code, contentAdmin.ToString(), ConfigurationManager.AppSettings["EmailAdmin"]);
+                    ShopNuocHoa.Common.Common.SendMail("LE LABO", "Đơn hàng mới #" + order.Code, contentAdmin.ToString(), ConfigurationManager.AppSettings["EmailAdmin"]);
                     cart.ClearCart();
                     code = new { Success = true, Code = req.TypePayment, Url = "" };
-                    //var url = "";
+                    //var url = "";9
                     if (req.TypePayment == 2)
                     {
                         var url = UrlPayment(req.TypePaymentVN, order.Code);
@@ -390,14 +390,15 @@ namespace ShopNuocHoa.Controllers
             string vnp_Url = ConfigurationManager.AppSettings["vnp_Url"]; //URL thanh toan cua VNPAY 
             string vnp_TmnCode = ConfigurationManager.AppSettings["vnp_TmnCode"]; //Ma định danh merchant kết nối (Terminal Id)
             string vnp_HashSecret = ConfigurationManager.AppSettings["vnp_HashSecret"]; //Secret Key
-
+            
             //Build URL for VNPAY
             VnPayLibrary vnpay = new VnPayLibrary();
             var Price = (long)order.TotalAmount * 100;
             vnpay.AddRequestData("vnp_Version", VnPayLibrary.VERSION);
             vnpay.AddRequestData("vnp_Command", "pay");
             vnpay.AddRequestData("vnp_TmnCode", vnp_TmnCode);
-            vnpay.AddRequestData("vnp_Amount", Price.ToString()); //Số tiền thanh toán. Số tiền không mang các ký tự phân tách thập phân, phần nghìn, ký tự tiền tệ. Để gửi số tiền thanh toán là 100,000 VND (một trăm nghìn VNĐ) thì merchant cần nhân thêm 100 lần (khử phần thập phân), sau đó gửi sang VNPAY là: 10000000
+            vnpay.AddRequestData("vnp_Amount", Price.ToString());
+            //Số tiền thanh toán. Số tiền không mang các ký tự phân tách thập phân, phần nghìn, ký tự tiền tệ. Để gửi số tiền thanh toán là 100,000 VND (một trăm nghìn VNĐ) thì merchant cần nhân thêm 100 lần (khử phần thập phân), sau đó gửi sang VNPAY là: 10000000
             if (TypePaymentVN == 1)
             {
                 vnpay.AddRequestData("vnp_BankCode", "VNPAYQR");

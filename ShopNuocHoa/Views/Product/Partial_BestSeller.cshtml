@@ -1,6 +1,9 @@
 ﻿@model IEnumerable<ShopNuocHoa.Models.EF.Product>
 
 <style>
+    .btn-black{
+        background-color:none!important;
+    }
     .swiper-slide {
         border: 0.1px solid #e6e7e6;
         font-family: "Comfortaa", sans-serif;
@@ -52,7 +55,6 @@
                             {
                                 strImage = img.Image;
                             }
-
                             <div class="swiper-slide" @item.ProductCategory.Alias>
                                 <div class="product-card position-relative">
                                     <a class="image-holder" href="/chi-tiet/@item.Alias-p@(item.Id)">
@@ -78,7 +80,7 @@
                                     </div>
                                     <div class="product-item-actions">
                                         <a class="ps-2" href="">Price:</a>
-                                        <span class="product-item-price pe-2">@ShopNuocHoa.Common.Common.FormatNumber(item.Price)$</span>
+                                        <span class="product-item-price pe-2">@ShopNuocHoa.Common.Common.FormatNumber(item.Price)VNĐ</span>
                                     </div>
                                 </div>
                             </div>

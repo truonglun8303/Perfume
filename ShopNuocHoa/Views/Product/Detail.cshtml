@@ -1,5 +1,5 @@
 ﻿@model ShopNuocHoa.Models.EF.Product
-    
+
 @{
     ViewBag.Title = Model.SeoTitle;
     ViewBag.SeoDescription = Model.SeoDescription ?? Model.Title;
@@ -10,10 +10,11 @@
 <link rel="stylesheet" type="text/css" href="~/Content/EditPlus.css">
 <style>
     .single_product_thumbnails ul li::after {
-        height: 81%!important;
+        height: 81% !important;
     }
-    .navbar{
-        width:100% !important;
+
+    .navbar {
+        width: 100% !important;
     }
 </style>
 @if (Model != null)
@@ -77,8 +78,8 @@
                     </div>
                     @if (Model.PriceSale > 0)
                     {
-                        <div class="original_price">@ShopNuocHoa.Common.Common.FormatNumber(Model.Price, 0)$</div>
-                        <div class="product_price">@ShopNuocHoa.Common.Common.FormatNumber(Model.PriceSale, 0)$</div>
+                        <div class="original_price">@ShopNuocHoa.Common.Common.FormatNumber(Model.Price, 0)VNĐ</div>
+                        <div class="product_price">@ShopNuocHoa.Common.Common.FormatNumber(Model.PriceSale, 0)VNĐ</div>
                     }
                     else
                     {
@@ -139,7 +140,7 @@
                     <div id="tab_3" class="tab_container">
                         <div class="row">
 
-                           
+
 
                         </div>
                     </div>
@@ -153,5 +154,8 @@
 }
 @section scripts{
     <script src="~/Content/assets/js/single_custom.js"></script>
-}   
+    <script src="~/Content/assets/js/categories_custom.js"></script>
+}
+
+
 

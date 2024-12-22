@@ -223,7 +223,7 @@ jQuery(document).ready(function($)
 	}
 	function AddWishlist(id) {
 		$.ajax({
-			url: '/wishlist/postwishlist',
+			url: '/Wishlist/postwishlist',
 			type: 'POST',
 			data: { ProductId: id },
 			success: function (res) {
@@ -408,7 +408,8 @@ jQuery(document).ready(function($)
 	*/
 
     function initPriceSlider()
-    {
+	{
+		jQuery.noConflict();
 		$( "#slider-range" ).slider(
 		{
 			range: true,

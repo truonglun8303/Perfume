@@ -1,6 +1,7 @@
 ﻿
 @model IEnumerable<ShopNuocHoa.Models.EF.Category>
 <link rel="stylesheet" type="text/css" href="~/Content/EditPlus.css">
+<link rel="stylesheet" type="text/css" href="~/Content/Frontend_Home/style.css">
 @if (Model != null && Model.Any())
 {
     <ul id="navbar" class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
@@ -11,47 +12,47 @@
             </li>
         }
         @*@foreach (var item in Model)
-        {
-            if (item.Alias.Equals("trang-chu"))
             {
-                item.Alias = "";
-            }
-            if (!string.IsNullOrEmpty(item.Link))
-            {
-                item.Alias = item.Link;
-            }
-            <li class="nav-item"><a class="nav-link me-4 active"  href="/@item.Alias">@item.Title</a></li>
-        }*@
+                if (item.Alias.Equals("trang-chu"))
+                {
+                    item.Alias = "";
+                }
+                if (!string.IsNullOrEmpty(item.Link))
+                {
+                    item.Alias = item.Link;
+                }
+                <li class="nav-item"><a class="nav-link me-4 active"  href="/@item.Alias">@item.Title</a></li>
+            }*@
 
         @*<li class="nav-item dropdown">
-            <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
-            <ul class="dropdown-menu">
-                <li>
-                    <a href="about.html" class="dropdown-item">About</a>
-                </li>
-                <li>
-                    <a href="blog.html" class="dropdown-item">Blog</a>
-                </li>
-                <li>
-                    <a href="shop.html" class="dropdown-item">Shop</a>
-                </li>
-                <li>
-                    <a href="cart.html" class="dropdown-item">Cart</a>
-                </li>
-                <li>
-                    <a href="checkout.html" class="dropdown-item">Checkout</a>
-                </li>
-                <li>
-                    <a href="single-post.html" class="dropdown-item">Single Post</a>
-                </li>
-                <li>
-                    <a href="single-product.html" class="dropdown-item">Single Product</a>
-                </li>
-                <li>
-                    <a href="contact.html" class="dropdown-item">Contact</a>
-                </li>
-            </ul>
-        </li>*@
+                <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="about.html" class="dropdown-item">About</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="dropdown-item">Blog</a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="dropdown-item">Shop</a>
+                    </li>
+                    <li>
+                        <a href="cart.html" class="dropdown-item">Cart</a>
+                    </li>
+                    <li>
+                        <a href="checkout.html" class="dropdown-item">Checkout</a>
+                    </li>
+                    <li>
+                        <a href="single-post.html" class="dropdown-item">Single Post</a>
+                    </li>
+                    <li>
+                        <a href="single-product.html" class="dropdown-item">Single Product</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="dropdown-item">Contact</a>
+                    </li>
+                </ul>
+            </li>*@
         <li class="nav-item">
             <div class="user-items ps-5">
                 <ul class="d-flex justify-content-end list-unstyled">
@@ -67,16 +68,51 @@
                     </li>
                     <li class="collapse navbar-collapse" id="navbarNavDarkDropdown">
                         <ul class="navbar-nav">
+                            @*<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    My Account
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="/Account/Login">Login</a></li>
+                    <li><a class="dropdown-item" href="/Account/Register">Register</a></li>
+                </ul>
+            </li>*@
+
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    My Account
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="/Account/Login">Login</a></li>
-                                    <li><a class="dropdown-item" href="/Account/Register">Register</a></li>
-                                </ul>
+                                @if (!Request.IsAuthenticated)
+                                {
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        My Account
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="/account/login"><i class=" fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+                                        <li><a class="dropdown-item" href="/account/Register"><i class=" fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Welcome: @User.Identity.Name
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="/account/profile"><i class="fa fa-sign-in" aria-hidden="true"></i>Profile</a></li>
+                                        <li><a class="dropdown-item" href="/wishlist/index"><i class="fa fa-sign-in" aria-hidden="true"></i>Sản phẩm yêu thích</a></li>
+                                        <li><a class="dropdown-item" href="javascript:document.getElementById('logOffForm').submit()"><i class="fa fa-user-plus" aria-hidden="true"></i> Logout</a></li>
+                                    </ul>
+                                }
+
                             </li>
+
                         </ul>
+                        @if (Request.IsAuthenticated)
+                        {
+                            <div style="display:none">
+                                @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { @id = "logOffForm" }))
+                                {
+                                    @Html.AntiForgeryToken()}
+                            </div>}
                     </li>
                     <li class="checkout">
                         <a href="/gio-hang">
