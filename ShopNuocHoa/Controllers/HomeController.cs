@@ -14,7 +14,6 @@ namespace ShopNuocHoa.Controllers
             public ActionResult Index()
             {
 
-                //ShopNuocHoa.Common.Common.SendMail("ABC", "AAAA", "AAAA", "ngohoang29@gmail.com");
                 return View();
             }
             public ActionResult Partial_Banner()
